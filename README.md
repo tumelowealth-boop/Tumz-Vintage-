@@ -1,11 +1,17 @@
-{
-  "name": "tumz-vintage",
-  "type": "module",
-  "dependencies": {
-    "openai": "^4.0.0",
-    "dotenv": "^16.0.0"
-  }
-}
-npm install
-Go to Issue #1 → comment:
+# Tumz Vintage AI Content Generator
 
+AI-powered content generator for:
+
+- YouTube
+- TikTok
+- Facebook
+
+Built with OpenAI API.
+
+## Setup
+
+npm install
+
+## Run
+
+node index.js
