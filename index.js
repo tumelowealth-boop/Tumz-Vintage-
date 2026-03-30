@@ -1,24 +1,13 @@
-import dotenv from "dotenv";
-import OpenAI from "openai";
-
-dotenv.config();
-
-const client = new OpenAI({
-  apiKey: process.env.OPENAI_API_KEY,
-});
-
-async function generateYouTubeIdeas() {
-  const response = await client.chat.completions.create({
-    model: "gpt-4o-mini",
-    messages: [
-      {
-        role: "user",
-        content: "Generate 5 viral YouTube Shorts ideas for luxury lifestyle"
-      }
-    ]
-  });
-
-  console.log(response.choices[0].message.content);
-}
-
-generateYouTubeIdeas();
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tumz Vintage AI</title>
+</head>
+<body>
+  <h1>Welcome to Tumz Vintage AI Content Generator</h1>
+  <p>Generate YouTube ideas, hashtags, and leads.</p>
+  <button>Generate</button>
+</body>
+</html>
