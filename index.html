@@ -5,9 +5,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tumz Vintage AI</title>
 </head>
-<body>
-  <h1>Welcome to Tumz Vintage AI Content Generator</h1>
-  <p>Generate YouTube ideas, hashtags, and leads.</p>
-  <button>Generate</button>
+<body style="font-family: Arial; padding: 20px; background:black; color:white;">
+  <h1>Tumz Vintage AI Content Generator</h1>
+
+  <input id="topic" placeholder="Enter topic" style="padding:10px; width:80%;">
+
+  <button onclick="generateContent()" style="padding:10px; margin-top:10px;">
+    Generate
+  </button>
+
+  <p id="output"></p>
+
+  <script>
+    function generateContent() {
+      const topic = document.getElementById('topic').value;
+      document.getElementById('output').innerText =
+        'AI idea for: ' + topic + ' | Luxury title: Success starts now';
+    }
+  </script>
 </body>
 </html>
